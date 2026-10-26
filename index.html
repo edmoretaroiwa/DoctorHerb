@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DoctorHerb – Share and check herbal knowledge</title>
+<meta name="description" content="Community herbal knowledge in Shona, Ndebele and English. Post, correct and vote.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0F2740">
+<meta property="og:title" content="DoctorHerb">
+<meta property="og:description" content="Herbal knowledge from our communities, checked by our communities.">
+<meta property="og:image" content="https://edmoretaroiwa.github.io/doctorherb/images/share-preview.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>tailwind.config={theme:{extend:{colors:{ink:'#0F2740',leaf:'#2B6A3E',moss:'#E6EEF3',sun:'#E3A21A',mist:'#F4F7FA'},fontFamily:{sans:['Bricolage Grotesque','system-ui','sans-serif']}}}}</script>
+</head>
+<body class="bg-mist text-ink font-sans min-h-screen">
+<a href="#app" class="sr-only focus:not-sr-only focus:absolute focus:z-20 focus:bg-white focus:p-2">Skip to content</a>
+<header class="bg-ink text-white sticky top-0 z-10">
+  <div class="max-w-2xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="#/" class="text-xl font-extrabold tracking-tight">Doctor<span class="text-sun">Herb</span></a>
+    <nav id="nav" class="flex items-center gap-2 text-sm"></nav>
+  </div>
+</header>
+<p class="bg-sun/20 text-sm px-4 py-2 text-center">Community knowledge, not medical advice. Ask a clinic before you treat a child, a pregnancy or a long illness.</p>
+<main id="app" class="max-w-2xl mx-auto px-4 py-6" aria-live="polite"></main>
+<footer class="max-w-2xl mx-auto px-4 pb-10 text-sm text-ink/70"><p>© DoctorHerb by CREtech. Community knowledge, not medical advice. <a class="underline" href="#/about">Safety and posting rules</a></p></footer>
+<div id="toast" class="fixed bottom-4 inset-x-4 max-w-md mx-auto rounded-lg px-4 py-3 text-white text-sm hidden" role="status"></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
